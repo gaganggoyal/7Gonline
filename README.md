@@ -1,24 +1,25 @@
-# README
+# 7Gonline
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A multi-user blogging app in Rails: users write articles, tag them with
+categories, and browse everything with pagination.
 
-Things you may want to cover:
+- Signup, login and logout with sessions and `has_secure_password`
+- Articles and categories with a many-to-many join, plus admin-only category
+  management
+- Pagination with `will_paginate`
+- Integration and controller tests for categories
+- MySQL in production with credentials kept in Rails encrypted credentials
 
-* Ruby version
+**Stack:** Ruby 2.7, Rails 6.1, Webpacker, SQLite / MySQL
 
-* System dependencies
+## Run it
 
-* Configuration
+```bash
+bundle install
+bin/rails db:setup
+bin/rails server
+```
 
-* Database creation
+---
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+An early learning project from 2023, kept for reference and archived. My current work is on [my profile](https://github.com/gaganggoyal) and at [gagan.indiaoffers.in](https://gagan.indiaoffers.in).
